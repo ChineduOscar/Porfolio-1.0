@@ -1,5 +1,7 @@
 import React from "react";
 import { BsArrowRight, BsTelephoneFill, BsWhatsapp } from "react-icons/bs";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import profilePic from "../assets/images/profilePic.png";
 import { socialMedia, resumeLink } from "../data";
 
@@ -48,9 +50,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 md:mt-0">
-          <img
+          <LazyLoadImage
             src={profilePic}
             alt="Chinedu Oscar"
+            effect="blur"
             className="w-[200px] h-[200px] border-2 border-[#77a8b4] relative z-[5] rounded-full"
           />
         </div>

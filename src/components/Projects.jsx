@@ -1,5 +1,7 @@
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { projects } from "../data"
 
 const Projects = () => {
@@ -17,9 +19,10 @@ const Projects = () => {
             className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
           >
             {/* Project Image */}
-            <img
+            <LazyLoadImage
               src={project.image}
               alt={project.title}
+              effect="blur"
               className="h-60 object-cover"
             />
             <div className="p-4 md:p-8">

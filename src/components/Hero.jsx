@@ -1,5 +1,7 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import heroImg from "../assets/images/heroImg2.png";
 import { socialMedia } from "../data";
 
@@ -35,11 +37,12 @@ const Hero = () => {
 
       {/* Image Section */}
       <div className="flex items-center justify-center">
-        <img 
-          src={heroImg} 
-          alt="Hero section illustration" 
-          className="w-[300px] h-[300px] md:w-[400px] md:h-[450px] rounded-lg"
-        />
+      <LazyLoadImage
+        src={heroImg}
+        alt="Hero section illustration"
+        effect="blur"
+        className="w-[300px] h-[300px] md:w-[400px] md:h-[450px] rounded-lg"
+      />
       </div>
     </div>
   );

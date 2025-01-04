@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { skills } from "../data";
 
 const Skills = () => {
@@ -17,9 +19,10 @@ const Skills = () => {
             className="flex items-center gap-2 md:gap-4 rounded-lg p-4 shadow-lg bg-gray-800 border-[#85d2e6] border-2"
           >
             {/* Skill Image */}
-            <img
+            <LazyLoadImage
               src={skill.img}
               alt={skill.name}
+              effect="blur"
               className="w-8 h-8 sm:w-12 sm:h-12 object-contain"
             />
             {/* Skill Name */}

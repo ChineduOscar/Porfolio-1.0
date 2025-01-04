@@ -135,4 +135,4 @@ export const socialMedia = [
     },
   ];
 
-  export const resumeLink = 'https://drive.google.com/file/d/1ugNVwpp5JLngvqekNsUo0P4nLfYMoT-D/view';
+  export const resumeLink = 'https://drive.google.com/file/d/1ugNVwpp5JLngvqekNsUo0P4nLfYMoT-D/view?usp=sharing';
